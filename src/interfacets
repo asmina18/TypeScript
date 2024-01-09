@@ -1,0 +1,24 @@
+
+
+// Interface for en person med fornavn, efternavn og alder
+interface PersonInterface {
+    firstname: string;
+    lastname: string;
+    age: number;
+}
+
+// En instans af PersonInterface med konkrete værdier
+const person: PersonInterface = {
+    firstname: 'Lars',
+    lastname: 'Larsen',
+    age: 95
+};
+
+// Funktion til at generere og returnere fulde navn baseret på en person
+const getFullName = (person: PersonInterface): string => `${person.firstname} ${person.lastname}`;
+
+// Anvend funktionen for at få fulde navn og gemme det i en variabel
+const fullName = getFullName(person);
+
+
+// console.log(`Fulde navn: ${fullName}`);
